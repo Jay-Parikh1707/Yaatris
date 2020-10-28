@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -174,5 +175,10 @@ public class RegisterVolunteer extends AppCompatActivity implements View.OnClick
                         }
                     }
                 });
+    }
+
+    public void openplaces(View view) {
+        Intent in = new Intent(this, places.class);
+        startActivity(in);
     }
 }
